@@ -1,0 +1,32 @@
+# Как мунбанс, но только не мунбанс ;)
+# При ошибках писать ему -> https://vk.com/hitioff
+
+name: BetterPunishments
+main: hiti.main.BetterPunishments
+version: 1.1.0
+author: itzHiti
+commands:
+  ban:
+    aliases: [bban]
+  kick:
+    aliases: [bkick]
+  rules:
+    aliases: [brules]
+  unban:
+    aliases: [bunban]
+  tempban:
+    aliases: [btempban]
+  mute:
+    aliases: [bmute]
+  baninfo:
+    aliases: [bbaninfo]
+  tempmute:
+    aliases: [btempmute]
+  unmute:
+    aliases: [bunmute]
+  whocreatedbans:
+    aliases: [bandeveloper, itzhiti]
+  kill:
+    aliases: [mkill]
+  reload:
+    aliases: [breload, brl]

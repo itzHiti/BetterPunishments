@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="vault-1.7.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/vault-1.7.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/spigot-1.12.2.jar!/" />
+    </SOURCES>
+  </library>
+</component>

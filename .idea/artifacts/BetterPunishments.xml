@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BetterPunishments">
+    <output-path>$USER_HOME$/Desktop/GG/Minecraft/mcplugintester/plugins</output-path>
+    <root id="archive" name="BetterPunishments.jar">
+      <element id="module-output" name="BetterPunishments" />
+    </root>
+  </artifact>
+</component>

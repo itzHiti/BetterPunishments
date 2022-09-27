@@ -1,0 +1,85 @@
+# Главный файл конфигурации плагина
+# Рекомендую его настроить :)
+# При ошибках писать ему -> https://vk.com/hitioff
+
+# Права:
+#
+#  hiti.ban - забанить навсегда
+#  hiti.tempban - временно забанить
+#  hiti.mute - замутить навсегда
+#  hiti.tempmute - временно замутить
+#  hiti.{COMMAND}-cooldown.bypass - обходить задержку на {COMMAND}
+#  hiti.tempban-time.bypass - обходить максимальное время на /tempban
+#  hiti.tempmute-time.bypass - обходить максимальное время на /tempmute
+#  hiti.unban - снять бан
+#  hiti.unmute - снять мут
+#  hiti.protect - защита на временный бан/мут
+#  hiti.kill - убить игрока
+#  hiti.kick - кикнуть игрока
+#
+
+# Настройки
+Settings:
+  # Модуль, который будет рассылать кликабельный текст по всем
+  # серверам BungeeCord. Включать если имеется модуль!
+  bungee_module_enable: true
+
+
+# Админы, которые имеют доступ к командам админа и обходам на макс. время наказания"
+admins_list:
+  - 'itzHiti'
+
+# База данных. Сейчас используется только MySQL
+MySQL:
+  host: 'localhost'
+  database: 'bans'
+  username: 'root'
+  password: ''
+  port: '3306'
+
+# Максимальное время бана для групп.
+# Доступные временна: 1s - 1 секунда; 1m - 1 минута; 1h - 1 часа; 1d - 1 день; 1y - 1 год.
+max_tempban_time:
+  admin: '1h'
+  moder: '4h'
+
+# Максимальное время мута для групп.
+# Доступные временна: 1s - 1 секунда; 1m - 1 минута; 1h - 1 часа; 1d - 1 день; 1y - 1 год.
+max_tempmute_time:
+  admin: '1h'
+  moder: '4h'
+
+# Приоритеты для групп, действуют только на команды: /tempban, /tempmute, /kick
+groups-priority:
+  default: 0
+  admin: 1
+
+# Команды, которые будут заблокированы при муте.
+blocked_commands_mute:
+  - '/msg'
+  - '/r'
+  - '/broadcast'
+  - '/bc'
+  - '/reply'
+  - '/m'
+  - '/pm'
+
+# Задержки для групп
+# Чтобы убрать задержку с команды, уберите ее ниже.
+# Доступные временна: 1s - 1 секунда; 1m - 1 минута; 1h - 1 часа; 1d - 1 день; 1y - 1 год.
+Cooldown-Manager:
+  mute:
+    admin: '1h'
+    moder: '4h'
+  ban:
+    admin: '1h'
+    moder: '4h'
+  tempban:
+    admin: '1h'
+    moder: '4h'
+  tempmute:
+    admin: '1h'
+    moder: '4h'
+  unban:
+    admin: '1h'
+    moder: '4h'
